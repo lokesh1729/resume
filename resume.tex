@@ -1,0 +1,155 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Lokesh Sanapalli}}\\
+	Bengaluru, India $\cdot$ hi@lokesh1729.com $\cdot$ 8466905904 $\cdot$ https://lokesh1729.com\\
+\end{center}
+
+\header{Headline}
+Results-Driven Software Engineering Leader \textbar{} 9+ Years of Experience in Building Scalable, Resilient, Low-Latency Distributed Systems \textbar{} Proven Track Record in Leading Teams, Designing End-to-End Architectures, and Delivering Complex Projects Across Python, Java, and Node.js\\
+\vspace*{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{RGUKT IIIT Nuzvid}\hfill Nuzvid, Andhra Pradesh\\
+B.Tech Computer Science \textit{GPA: 8.2} \hfill July 2009 - May 2015\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Moneyview} \hfill Bengaluru\\
+\textit{Lead Software Engineer} \hfill May 2023 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Built and scaled a high-performing team of \textbf{9 engineers} for the cross-sell pod, key hiring panelist, mentor, and coach. Led delivery across product lines including home loans, credit cards, digital gold, insurance, and core platform services.
+	\item Spearheaded the launch of the Digital Gold product (SIP, one-time, gifting), scaling it from \textbf{0 to 10K daily transactions}, significantly boosting user engagement on the MoneyView platform.
+	\item Built and scaled the Home Loans/LAP product from \textbf{0 to 10 Cr+} monthly disbursals and integrated with 10+ partners. Designed integration frameworks and coached the team to execute partner onboarding efficiently.
+	\item Developed Credit Cards product from scratch to \textbf{2K+ disbursals/month}; also built MIS email automation for product analytics.
+	\item Led technical execution: design/code reviews, 1:1s, team mentoring, and established engineering-first culture with strong operational processes.
+	\item Drove cross-functional collaboration, sprint planning, retrospectives, and product stakeholder management.
+	\item Defined and executed the tech roadmap —examples include implementing circuit breaker for all http clients, moving third-party request logs from RDS to s3 for cost savings, separation of SQL queries to reader-writer instances etc..
+	\item Designed and rolled out an org-wide third-party degradation detection system using \textbf{Datadog and Micrometer}, improving conversion funnels and UX.
+\end{itemize}
+\textbf{Licious} \hfill Bengaluru\\
+\textit{Lead Software Engineer} \hfill Nov 2021 - May 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Improved existing product listing APIs by reducing P99 latency from \textbf{1.5 seconds to 200ms} by creating a new microservice called discovery. Have worked on the HLD, LLD, implementation and till delivery of it.
+	\item \textbf{Rearchitected and rewritten} the review rating microservice that written in nodejs. The results optimizes the data storage and latency.
+	\item Revamped the milestone based rewards system that written in go to run spin wheel campaigns that improved the customer retention funnels.
+	\item Have lead and delivered the initiatives in growth team to move from monolith to microservices architecture.
+\end{itemize}
+\textbf{Akamai} \hfill Bengaluru, India\\
+\textit{Senior Software Engineer} \hfill May 2018 - Nov 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed the report automation platform from scratch as part of the Managed Security Product team, including HLD and LLD.
+	\item Built a data aggregation pipeline using \textbf{Python, Celery, and RabbitMQ} to collect data from multiple sources
+	\item Improved Celery worker throughput and report generation by 3x by switching to a Gevent-based I/O-optimized implementation.
+\end{itemize}
+\textbf{Bigbasket} \hfill Bengaluru, India\\
+\textit{Software Engineer II} \hfill Nov 2016 - May 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and implemented backend APIs for features like cancellation charges and slot availability.
+	\item Rewrote and optimized APIs in Python (Django) and Node.js to enhance reliability and performance of the infrastructure.
+\end{itemize}
+\textbf{Cigital} \hfill Bengaluru, India\\
+\textit{Associate Software Engineer} \hfill Nov 2015 - Jun 2016\\
+\textbf{Techmahindra} \hfill Hyderabad\\
+\textit{Associate Software Engineer} \hfill July 2015 - Oct 2015\\
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages \& Frameworks: & Python, Django, Javascript, Node.js, Java, Spring Boot            \\
+	Backend Technologies:                & Kafka, Rabbitmq, Redis, AWS, Docker, Kubernetes, Debezium         \\
+	Databases:                           & MySQL, PostgreSQL, MongoDB, ElasticSearch                         \\
+	Frontend:                            & HTML5, CSS3, Javascript, Tailwind CSS, React                      \\
+	Others:                              & Problem Solving, Data Structures, Algorithms, Agile Methodologies \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Awards}
+{\textbf{Rookie Rockstar}} {\sl Moneyview} \\
+Awarded \textquotesingle{}Rookie Rockstar\textquotesingle{} for establishing an engineering-first culture, driving disruptive change, and redefining team goals to align with high-impact delivery.\\
+\vspace*{2mm}
+{\textbf{Circle of Excellence}} {\sl Moneyview} \\
+Awarded \textquotesingle{}Circle of Excellence\textquotesingle{} for successful delivery and execution of key products including Digital Gold, Home Loans, and Credit Cards.\\
+\vspace*{2mm}
+
+\ 
+\end{document}
