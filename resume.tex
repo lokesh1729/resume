@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[10pt,a4paper]{article}
     \usepackage{fullpage}
     \usepackage{amsmath}
     \usepackage{amssymb}
@@ -74,11 +74,11 @@
 \vspace*{-10pt}
 \begin{center}
 	{\Huge \scshape {Lokesh Sanapalli}}\\
-	Bengaluru, India $\cdot$ hi@lokesh1729.com $\cdot$ 8466905904 $\cdot$ https://lokesh1729.com\\
+	Bengaluru, India $\cdot$ hi@lokesh1729.com $\cdot$ 9538779797 $\cdot$ https://lokesh1729.com\\
 \end{center}
 
 \header{Headline}
-Results-Driven Software Engineering Leader \textbar{} 9+ Years of Experience in Building Scalable, Resilient, Low-Latency Distributed Systems \textbar{} Proven Track Record in Leading Teams, Designing End-to-End Architectures, and Delivering Complex Projects Across Python, Java, and Node.js\\
+results-driven software engineering leader \textbar{} 10+ years of experience in building scalable, resilient, low-latency distributed systems \textbar{} proven track record in leading and managing teams, designing end-to-end architectures, and delivering complex projects irrespective of tech stack\\
 \vspace*{2mm}
 
 %==== Education ====%
@@ -90,28 +90,63 @@ B.Tech Computer Science \textit{GPA: 8.2} \hfill July 2009 - May 2015\\
 %==== Experience ====%
 \header{Work Experience}
 \vspace{1mm}
+\textbf{Moneyview} \hfill Bengaluru\\
+\textit{Engineering Manager} \hfill May 2025 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Owned HL/LAP, platform charters for the cross-sell pod, leading 9 backend engineers, 1 frontend engineer, and 2 DevOps engineers to deliver critical business, security, and technology initiatives.
+\end{itemize}
 
 \textbf{Moneyview} \hfill Bengaluru\\
-\textit{Lead Software Engineer} \hfill May 2023 - Present\\
+\textit{Lead Software Engineer (Unofficial Engineering Manager)} \hfill January 2024 - April 2025\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Built and scaled a high-performing team of \textbf{9 engineers} for the cross-sell pod, key hiring panelist, mentor, and coach. Led delivery across product lines including home loans, credit cards, digital gold, insurance, and core platform services.
-	\item Spearheaded the launch of the Digital Gold product (SIP, one-time, gifting), scaling it from \textbf{0 to 10K daily transactions}, significantly boosting user engagement on the MoneyView platform.
-	\item Built and scaled the Home Loans/LAP product from \textbf{0 to 10 Cr+} monthly disbursals and integrated with 10+ partners. Designed integration frameworks and coached the team to execute partner onboarding efficiently.
-	\item Developed Credit Cards product from \textbf{0 to 2K+ disbursals/month}; also built MIS email automation for product analytics.
-	\item Led technical execution: design/code reviews, 1:1s, team mentoring, and established \textbf{engineering-first culture} with strong operational processes.
-	\item Drove cross-functional collaboration, sprint planning, retrospectives, and product stakeholder management.
-	\item Defined and executed the tech roadmap —examples include implementing \textbf{circuit breaker} for all http clients, moving third-party request logs from RDS to s3 for cost savings, separation of SQL queries to reader-writer instances etc..
-	\item Designed and rolled out an org-wide third-party degradation detection system using \textbf{Datadog and Micrometer}, improving conversion funnels and UX.
+	\item Built a team of \textbf{10 engineers} for the Cross-Sell pod from scratch. Acted as a pseudo engineering manager (hired 5 engineers), conducted regular 1:1s, provided actionable feedback, and \textbf{led bi-annual performance reviews}. Mentored and coached \textbf{3 engineers to consistently exceed expectations}.
+
+    \item Built and scaled the Home Loans/LAP product from \textbf{0 to 10 Cr+} in monthly disbursals, integrating with \textbf{15+ partners}. Played a pivotal role in product development including \textbf{partner integrations}, internal \textbf{ops workflows}, and \textbf{user experience journey}. Designed reusable integration frameworks and led several ops-critical initiatives including Freshsales integration and a custom CRM with WhatsApp chat support.
+
+    \item Developed and launched the Credit Cards product from \textbf{0 to 2K+ disbursals/month}. Led the system design with \textbf{5+ partners' native API integrations}, and drove development of a scalable MIS email automation engine processing \textbf{1M+ partner records} monthly. Contributed to product development spanning \textbf{partner onboarding}, \textbf{ops workflows}, and the \textbf{customer journey}.
+
+    \item Spearheaded the launch of the Digital Gold product (SIP, one-time, gifting), scaling it from \textbf{0 to 10K daily transactions}, significantly boosting user engagement on the MoneyView platform.
+
+    \item Established and scaled core engineering processes — including structured on-call rotation process, system design reviews, multi-level code reviews (with pair programming), and \textbf{RCA workflows} — to strengthen team reliability, ownership, and engineering excellence.
+
+    \item Led technical execution and cross-functional delivery through architecture/code reviews, mentoring, \textbf{sprint planning, retrospectives, and effective stakeholder collaboration} — fostering an engineering-first culture with strong operational processes.
+
+    \item Defined and executed critical observability and reliability initiatives — set up full-stack observability \textbf{Datadog and Kibana}, implemented \textbf{circuit breaker} for all HTTP clients, migrated outgoing HTTP logging from RDS to S3 for cost efficiency, and optimized DB performance via reader-writer separation improving higher reliability and future scalability.
+
+    \item Trained engineers on leveraging AI-assisted tools such as \textbf{Qodo, Cursor, and GitHub Copilot}, resulting in measurable improvements in development speed, code quality, and overall engineering productivity.
 \end{itemize}
-\textbf{Licious} \hfill Bengaluru\\
-\textit{Lead Software Engineer} \hfill Nov 2021 - May 2023\\
+
+\textbf{Moneyview} \hfill Bengaluru\\
+\textit{Lead Software Engineer} \hfill May 2023 - December 2024\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Improved the existing product listing APIs by reducing P99 latency from \textbf{1.5 seconds to 200ms} by creating a new microservice called discovery. Have worked on the HLD, LLD, implementation and till delivery of it.
-	\item \textbf{Rearchitected and rewritten} the review rating microservice that written in nodejs. The results optimizes the data storage and latency.
-	\item Revamped the milestone based rewards system that written in go to run spin wheel campaigns that improved the customer retention funnels.
-	\item Have lead and delivered the initiatives in growth team to move from monolith to microservices architecture.
+    \item Architected continous archival process using percona tools for high write throughput tables in loan origination system.
+
+    \item Re-architected and rewritten loan insurance flows by solving multiple entries due to concurrency.
+
+    \item Architected HTTP callback system for loan sourcing partners. Executed by mentoring 2 engineers.
+
+    \item Implemented connection pooling for legacy memcached library in loan origination monolith system.
+
+    \item Architected and implemented a sourcing partner portal integrated with the loan origination system, sourcing partner system streamlining partner communication and simplifying partner configuration.
+
+    \item Have setup code review, design review processes within the team ensuring high code quality standards.
+
+    \item Defined and executed critical observability and reliability initiatives — set up full-stack observability for loan origination systems using \textbf{Datadog and Kibana}.
+
+    \item Designed and implemented an org-wide third-party degradation detection system using \textbf{Datadog and Micrometer}, improving user experience and conversion funnel health.
+\end{itemize}
+
+\textbf{Licious} \hfill Bengaluru\\
+\textit{Lead Software Engineer} \hfill Nov 2021 - April 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Improved the existing product listing APIs by reducing P99 latency from \textbf{1.5 seconds to 200ms} by creating a new microservice called Discovery. Led HLD, LLD, implementation, and delivery end-to-end, while \textbf{mentoring 3 junior engineers throughout the project lifecycle}.
+	\item \textbf{Rearchitected and rewritten} the Review \& Rating microservice (originally in Node.js), optimizing both data storage and latency. \textbf{Closely collaborated with product stakeholders to align technical design with business goals} and ensure smooth rollout.
+	\item Revamped the milestone-based rewards system (originally in Golang) to support spin wheel campaigns, leading to improved customer retention funnels.
+	\item Led and delivered multiple growth team initiatives to transition from a monolithic to a microservices architecture.
 \end{itemize}
 \textbf{Akamai} \hfill Bengaluru, India\\
 \textit{Senior Software Engineer} \hfill May 2018 - Nov 2021\\
